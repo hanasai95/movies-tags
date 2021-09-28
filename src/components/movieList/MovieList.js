@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getTag } from "../../features/tags/tagsSlice";
 import { useSelector } from "react-redux";
 import axios from "axios";
+import MovieData from "../../data/movies.json";
 export default function MovieList() {
   const tagState = useSelector(getTag);
   const [movieData, setMovieData] = useState([]);
@@ -22,11 +23,11 @@ export default function MovieList() {
     });
   }
   console.log({ tagState });
-  console.log(movieData);
+  console.log(MovieData);
   return (
     <>
       <ul>
-        <MovieListGenerator MoviesData={movieData} />
+        <MovieListGenerator MoviesData={MovieData} />
       </ul>
     </>
   );
