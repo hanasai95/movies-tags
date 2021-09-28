@@ -14,14 +14,20 @@ export default function MovieList() {
       setMovieData(response.data);
     }
     // if (!movieData)
-    fetchData();
+    // fetchData();
   }, []);
+  function MovieListGenerator({ MoviesData }) {
+    return MoviesData?.map((movie) => {
+      return <MovieItem key={movie.id} movie={movie} />;
+    });
+  }
   console.log({ tagState });
   console.log(movieData);
   return (
-    <div>
-      <MovieItem />
-      MovieList
-    </div>
+    <>
+      <ul>
+        <MovieListGenerator MoviesData={movieData} />
+      </ul>
+    </>
   );
 }
