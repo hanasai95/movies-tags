@@ -11,6 +11,18 @@ li {
   list-style-type: none;
 }
 
+.search-input-container {
+  margin-top: 15px;
+}
+
+.search-input {
+  width: 250px;
+}
+
+.movies-list-container {
+  margin-top: 100px;
+}
+
 .input-container {
   margin-top: 20px;
 }
@@ -66,6 +78,19 @@ li {
   background-color: lightgray;
   height: 150px;
   border: 1px solid gray;
+}
+
+.search-bar-container {
+  background-color: black;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+}
+
+.search-bar {
 }
 
 @media (prefers-reduced-motion: no-preference) {

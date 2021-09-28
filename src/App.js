@@ -4,10 +4,10 @@ import SearchBar from "./components/searchBar";
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="search-bar-container">
         <SearchBar />
       </div>
-      <div>
+      <div className="movies-list-container">
         <MovieList />
       </div>
     </div>
