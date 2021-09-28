@@ -22,6 +22,6 @@ reduce computation demand.
 So I would have spent more time to set up the grid system
 for the mobile view.
 
-## Technology used
+## Technologies used
 
 ReactJS, Redux
