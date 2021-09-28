@@ -2,6 +2,8 @@
 
 This is an exercise app that allows a user to save tags for movies in a single page list. An movie can have a maximum of 5 tags and is removable, but not editable. Each movie in the list displays the name of the movie and date. Tags is persisted so that the tags remain across browser sessions. The list is also filterable by user defined tags through a simple search. The UI components are all created by pure css, without using any third party libraries
 
+Please visit [deployed demo](https://movies-tags.vercel.app/)
+
 ## Note
 
 I have implemented Redux to persist movie tags data and Context to handle search string. The reason I did this just to demostrate I am familiar with both of them.
