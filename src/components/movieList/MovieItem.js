@@ -37,9 +37,8 @@ export default function MovieItem({ movie }) {
 
   function TagsGenerator() {
     return tagList.map((tag, index) => (
-      <div className={"tag-box"}>
+      <div key={index} className={"tag-box"}>
         {tag}
-
         <button
           className="cancel-tag-button"
           key={index}
@@ -54,12 +53,16 @@ export default function MovieItem({ movie }) {
 
   return (
     <li key={movie.id}>
-      {error ? error : ""}
+      <div className="error">{error ? error : ""}</div>
       <div className="item-list">
-        <span>{movie.name}</span>
-        <div>
+        <div className="movie-name-date">
+          <span>{movie.name}</span>
+          <span>{movie.created_at}</span>
+        </div>
+        <div className="tags-container">
           <TagsGenerator />
         </div>
+
         <div className="input-container">
           <input
             className="tag-input"

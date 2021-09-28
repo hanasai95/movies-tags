@@ -15,10 +15,15 @@ export default function MovieList() {
 
   useEffect(async () => {
     async function fetchData() {
-      const response = await axios(API_URL);
-      setMovieData(response.data);
+      // if api key reaches rate limit, use fake data.
+      try {
+        const response = await axios(API_URL);
+        setMovieData(response.data);
+      } catch (error) {
+        setMovieData(MoviesData);
+        console.error(error);
+      }
     }
-    // if (!movieData)
     fetchData();
   }, []);
 
