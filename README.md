@@ -8,6 +8,8 @@ Please visit [deployed demo](https://movies-tags.vercel.app/)
 
 I have implemented Redux to persist movie tags data and Context to handle search string. The reason I did this just to demostrate I am familiar with both of them.
 
+Also, I added dummy movie data copied from the mockAPI, because the key provided is ratelimited and even though I created my own key it still runs out of usage. Therefore, I added logic to use the dummy data in the case if data fetch is blocked by the provider. You should be able to exmine the logic from the MovieList component.
+
 ## What I could have done better
 
 This project is required to finish within 3 hours, therefore, time is everything. If given more time, I would definitely improve the following items.
