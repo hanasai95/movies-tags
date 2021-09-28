@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+## Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an exercise app that allows a user to save tags for movies in a single page list. An movie can have a maximum of 5 tags and is removable, but not editable. Each movie in the list displays the name of the movie and date. Tags is persisted so that the tags remain across browser sessions. The list is also filterable by user defined tags through a simple search. The UI components are all created by pure css, without using any third party libraries
 
-## Available Scripts
+## Note
 
-In the project directory, you can run:
+I have implemented Redux to persist movie tags data and Context to handle search string. The reason I did this just to demostrate I am familiar with both of them.
 
-### `yarn start`
+## What I could have done better
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is required to finish within 3 hours, therefore, time is everything. If given more time, I would definitely improve the following items.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1: try to come up with more efficient data structure for the search algorithm, currently it is stored as an object
+with movie id as the key and an array of tags as the property. There maybe more efficient way to handle this to
+reduce computation demand.
 
-### `yarn test`
+2: I have satisified 95% of the UI requirement according to the given screenshot design, and I have also implemented partial mobile responsiveness at the last minute, however, I did not have enough time to make it perfect. If I had more time, I would have designed a better mobile layout and refine the css to reflex that design. Also in mobile view, the tags may not display properly right now when they are longer than expected.
+So I would have spent more time to set up the grid system
+for the mobile view.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology used
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ReactJS, Redux
