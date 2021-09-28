@@ -22,6 +22,13 @@ reduce computation demand.
 So I would have spent more time to set up the grid system
 for the mobile view.
 
+3: to add more feature to improve user experience, for example, the error message, such as when user try to input more than 5 tags, or when they input the same tag,is only displayed as red text, I would definitely make the error message display to be more user friendly.
+Also, I did not have time enough to put the magnifying glass to the search input according to the screenshot provided. I would definitly add that if I have more time.
+
+4: I would consider adding another search function to filter the movies by name, or date, however, these are not required, they are just additional features to add to the backlog to further improve user experience.
+
+5: I would consider adding colors to the tags, this is another additional feature to improve user experience.
+
 ## Technologies used
 
 ReactJS, Redux
