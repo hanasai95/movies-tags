@@ -117,6 +117,38 @@ li {
 .search-bar {
 }
 
+@media only screen and (max-width: 600px) {
+  .search-input {
+    width: 150px;
+  }
+  .search-input-container {
+    margin-top: 15px;
+  }
+  .item-list {
+    margin: 0;
+    width: 100%;
+  }
+  li {
+    padding: 0 0;
+    width: 100%;
+  }
+  ul {
+    padding: 0 0;
+  }
+  .tag-input {
+    height: 30px;
+    width: 50px;
+  }
+  .add-tag-button {
+    color: white;
+    margin-top: 20px;
+    background-color: #0b5854;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

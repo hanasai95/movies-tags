@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import AppContext from "../../context";
-import SearchIcon from "./search.png";
+
 export default function SearchBar() {
   const { search, setSearch } = useContext(AppContext);
   function handleSearchOnChange(e) {
@@ -8,6 +8,7 @@ export default function SearchBar() {
   }
   return (
     <div className="search-input-container">
+      {/* <span>@copyright hanaKai</span> */}
       <input
         className="search-input"
         onChange={handleSearchOnChange}
