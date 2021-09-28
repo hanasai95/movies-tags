@@ -15,6 +15,29 @@ li {
   margin-top: 20px;
 }
 
+.tag-box {
+  /* display: "flex";
+  justify-content: space-evenly; */
+  margin: 5px;
+  color: white;
+  min-width: 80px;
+  border-radius: 10px;
+  background-color: #394baf;
+}
+
+.cancel-tag-button {
+  margin: 2px;
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+  padding: 1px 2px;
+  color: white;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+}
+
 .tag-input {
   height: 40px;
   width: 300px;
@@ -41,7 +64,7 @@ li {
   display: flex;
   justify-content: space-around;
   background-color: lightgray;
-  height: 100px;
+  height: 150px;
   border: 1px solid gray;
 }
 

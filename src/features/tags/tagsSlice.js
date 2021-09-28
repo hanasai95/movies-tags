@@ -7,7 +7,7 @@ export const tagsSlice = createSlice({
   initialState,
   reducers: {
     updateTag: (state, action) => {
-      console.log({ action });
+      state[action.payload.id] = action.payload.tagNames;
       return state;
     },
   },
