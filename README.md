@@ -31,8 +31,7 @@ Also, I did not have time enough to put the magnifying glass to the search input
 
 6: I would consider adding another search function to filter the movies by name, or date, however, these are not required, they are just additional features to add to the backlog to further improve user experience.
 
-7: I would consider adding col![Oct-03-2021 21-12-24](https://user-images.githubusercontent.com/45838986/135780504-0d985fb6-fb92-4e50-90be-852ee9e08c11.gif)
-ors to the tags, this is another additional feature to improve user experience.
+7: I would consider adding movie photos to the tags, this is another additional feature to improve user experience.
 
 ## Technologies used
 
